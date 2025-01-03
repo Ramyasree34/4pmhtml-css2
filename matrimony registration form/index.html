@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vivah Matrimony⭐</h1>
+    <p>All * fields are mandatory</p><br>
+    <form action="">
+        <div class="input">
+            <label for="na">Full Name:*</label>
+            <input type="text" value="mr" disabled>
+            <input type="text" placeholder="Enter Full name" pattern="[A-Z]{3}" id="na" required>
+        </div>
+        <br>
+        <div class="input">
+            <label for="em">Email:</label>
+            <input type="email" placeholder="Enter Email" pattern="^[A-Za-z0-9]+@\w+.[A-Za-z]{2,}$">
+        </div>
+        <br>
+        <div class="input">
+            <label for="phno">Phone Number:</label>
+            <input type="number" placeholder="(000) 000-0000" pattern="[0-9]{10}" message="Enter 10 digits" id="phno">
+        </div>
+        <br>
+        <div class="input">
+            <label for="dt">Date-of-Birth:</label>
+            <input type="date" id="dt" required>
+        </div>
+        <br>
+        <div class="input">
+            <label for="plc">Place:</label>
+            <input type="text" placeholder="Place" id="plc" required>
+        </div>
+        <br>
+        <div class="input">
+            <label for="sl">Salary:</label>
+            <input type="number" placeholder="min 20lpa" id="sl" min="20">
+        </div>
+        <br>
+        <div class="input">
+            <span>Gender:</span>
+            <input type="radio" name="gen"  values="male" id="ge" checked> 
+            <label for="ge">Male</label>
+            <input type="radio" name="gen"  values="female" id="gef"> 
+            <label for="gef">Female</label>
+        </div>
+        <br>
+        <div class="input">
+            <span>Zodiac Sign:</span>
+            <select name="Zodiac" id="Zodiac">
+                <option value="leo">leo</option>
+                <option value="cancer">cancer</option>
+                <option value="gemini">gemini</option>
+                <option value="libra">libra</option>
+                <option value="virgo">virgo</option>
+                <option value="taurus">taurus</option>
+                <option value="Aries">Aries</option>
+                <option value="Scorpius">Scorpius</option>
+            </select>
+        </div>
+        <br>
+        <div class="input">
+            <label for="photo" accept=".jpg,.png">Photo:</label>
+            <input type="file" name="photo" id="photo">
+        </div>
+        <br>
+        <div class="input">
+            <span>Caste:</span>
+            <select name="Caste" id="Caste">
+                <option value="please select">Please Select</option>
+                <option value="obc">OBC</option>
+                <option value="bc">BC</option>
+                <option value="sc/st">SC/ST</option>
+                <option value="none">None</option>
+            </select>
+            </div>
+            <br><br>
+            <button>Submit</button>
+            <button>Reset</button>
+
+    </form>
+</body>
+</html>
