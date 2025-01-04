@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body
+{
+    /* background-color:hsla(0, 62%, 40%,0.9);*/
+    /* background: radial-gradient(orange,white,green,orange,white,green,orange,white,green,orange,white,green,orange,white,green); */
+background:linear-gradient(85deg, rgb(219, 243, 167) 15%, rgb(236, 111, 57) 65%);
+font-family: "Pacifico", serif;
+font-weight: 400;
+font-style: normal;
+    height: 100vh; 
+}
+h1{
+text-align: center;
+}
+
+
+
+
+
+
+
+
+  h1
+        {
+            background-color: black !important;
+            color: white;
+        }
+.bujji{
+    background-color: yellowgreen;
+}
+#fourthHeading{
+    background-color: red;
+}
+#myDiv
+{
+    background-color: black;
+    color: white;
+    height:100px;
+    width: 500px;
+    height: 50vh;
+    width: 50vw;
+    height: 50%;
+    width: 50%;
+    font-size: 32px;
+}
+
+#para{
+    color: black;
+    height: 3em;
+    background-color: white;
+}
+
+
+
