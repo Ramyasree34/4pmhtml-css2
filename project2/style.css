@@ -7,6 +7,10 @@ img{
   width: 700px;
   background-color: plum;
   border: 1px solid black;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
   text-align: center;
   padding: 50px;
 }
