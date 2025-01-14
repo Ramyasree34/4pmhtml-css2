@@ -1,0 +1,55 @@
+body{
+    background: linear-gradient( 123deg, orange,white,green);
+    height: 100vh;
+}
+h1{
+    font-size: 64px;
+    text-align: center;
+    text-decoration: 5px solid black underline;
+    letter-spacing: normal;
+
+}
+img{
+    height: 300px;
+   float: center;
+   margin: 30px;
+
+}
+p{
+    font-size: 24px;
+    text-align: justify;
+}
+.box{
+    height: 120px;
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px green;
+    margin: 30px;
+    float: left;
+    margin: 30px;
+}
+.box1{
+    width: 20vw;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+
+}
+.box2{
+    width: 20vw;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+.box3{
+    width: 20vw;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
