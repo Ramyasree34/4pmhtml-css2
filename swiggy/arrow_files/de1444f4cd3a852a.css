@@ -1,0 +1,96 @@
+@keyframes qf9kme3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.qf9kme0 {
+  all: unset;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: var(--ColorTextTertiary);
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.qf9kme0:disabled {
+  cursor: not-allowed;
+  color: var(--ColorTextDisabled);
+  background-color: transparent;
+}
+.qf9kme0:enabled:focus {
+  outline: var(--BorderWidthThick) solid var(--ColorActionFocus);
+}
+.qf9kme1:focus {
+  outline: none;
+}
+.qf9kme1:enabled:focus {
+  outline: none;
+}
+.qf9kme2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qf9kme2 > svg {
+  width: 100%;
+  height: 100%;
+}
+.qf9kme4 {
+  opacity: 0;
+}
+.qf9kme5 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qf9kme6 {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--ColorTextTertiary);
+  border-top: 2px solid var(--ColorActionGhost);
+  animation: qf9kme3 1.5s linear infinite;
+}
+.qf9kme7 {
+  background-color: var(--ColorActionGhost);
+}
+.qf9kme7:hover {
+  background-color: var(--ColorActionGhostHover);
+}
+.qf9kme8 {
+  background-color: var(--ColorActionSecondary);
+}
+.qf9kme8:hover {
+  background-color: var(--ColorActionSecondaryHover);
+}
+.qf9kme9 {
+  width: var(--Size4);
+  height: var(--Size4);
+}
+.qf9kmea {
+  width: var(--Size6);
+  height: var(--Size6);
+}
+.qf9kmeb {
+  width: var(--Size6);
+  height: var(--Size6);
+}
+.qf9kmec {
+  padding: var(--Spacing4);
+  border-radius: var(--BorderRadiusBase);
+}
+.qf9kmed {
+  padding: var(--Spacing4);
+  border-radius: var(--BorderRadiusSm);
+}
+.qf9kmee {
+  padding: var(--Spacing8);
+  border-radius: var(--BorderRadiusMd);
+}
