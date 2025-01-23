@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://img.freepik.com/premium-photo/silver-gold-knight-chess-board-chess-knights-head-head_776674-520071.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+
+}
+
+/* Main Container */
+.main {
+    min-width: 300px;  
+    min-height: 400px; 
+    border: 20px solid rgb(11, 11, 11);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+/* Grid Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    width: 100%;
+    height: 100%;
+    gap: 0;
+     opacity: 0.7;
+  }
+  
+  /* Grid Cell */
+  div {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+
+
+/* Images */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Chess Board coloring */
+.container .secondary-col div:nth-child(even),
+.container .primary-col div:nth-child(odd) {
+    background-color: rgb(149, 142, 142);
+}
+
+.container .secondary-col div:nth-child(odd),
+.container .primary-col div:nth-child(even) {
+    background-color: white;
+}
+
+/* Tooltip */
+.pawn, .rook, .knight, .bishop, .king, .queen {
+    position: relative;
+}
+
+.image-info, 
+.image-info-rook, 
+.image-info-knight, 
+.image-info-bishop, 
+.image-info-king, 
+.image-info-queen {
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    width: max-content;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto", serif;
+    font-weight:800;
+    border-radius: 10px;
+    border: 2px solid #F3EDED;
+    visibility: hidden;
+    background-color: #fff !important;
+    z-index: 1;
+    letter-spacing: 0.9px; 
+    
+}
+
+/* Tooltip for Different Pieces */
+.image-info {
+    top: 25px;
+
+}
+
+.pawn:hover .image-info,
+.rook:hover .image-info-rook,
+.knight:hover .image-info-knight,
+.bishop:hover .image-info-bishop,
+.queen:hover .image-info-queen,
+.king:hover .image-info-king {
+    visibility: visible;
+    opacity: 1;
+}

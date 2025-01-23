@@ -29,7 +29,6 @@ body{
     color: white;
     font-size: 32px;
     border: 2px solid green;
-    background-color:rgb(120, 156, 181);
 }
 .child5{
     grid-row-start:2;

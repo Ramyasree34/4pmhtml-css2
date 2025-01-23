@@ -1,0 +1,59 @@
+/* div p{
+  color: red;
+}
+input[type="text"]{
+    background-color: red;
+}
+a[href="https://www.google.com"]{
+    color: red;
+}
+h1+p{
+    color: green;
+} */
+
+/* #para::first-letter
+{
+    color: red;
+    font-size: 78px;
+} */
+
+/* #para::first-line{
+    color: red;
+} */
+#para::before{
+    content:"\201C";
+    color: red;
+    font-size: 78px;
+}
+/* #para::after{
+    content:"\201D";
+    color: red;
+    font-size: 78px;
+} */
+ *{
+    margin: 0;
+    padding: 0;
+ }
+.box{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+/* .box:nth-last-child(3){
+    background-color: red;
+} */
+ .parent>div:nth-of-type(4){
+    background-color: yellow;
+ }
+ .parent>p:nth-of-type(1){
+    background-color: red;
+ }
+ .box:hover{
+    background-color: green;
+ }
+/* #box:hover{
+  height: 200px;
+}
+input:enabled{
+    background-color: black;
+} */
