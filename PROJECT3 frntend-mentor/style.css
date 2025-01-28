@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+* /* universal selector*/
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ font-family: "Inter", serif;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainDiv{
+    display: flex;
+    width: 70vw;
+    background-color: hsl(244, 38%, 16%);
+}
+.leftDiv{
+ padding: 50px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+     color: white;
+     font-size: 42px;
+}
+h2{
+    color: white;
+}
+.headingSpan{
+    color: hsl(277, 64%, 61%);
+}
+.content{
+  color:hsla(0, 0%, 100%, 0.75)
+}
+.stat>p{
+    color:hsla(0, 0%, 100%, 0.6)
+}
+.rightDiv{
+   background-image: url('./image-header-desktop.jpg');
+   width:100%;
+   height: 60vh;
+   background-color: hsl(277, 64%, 61%);
+  
+}
