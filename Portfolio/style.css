@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.8s ease;
+    scroll-behavior: smooth;
+}
+:root{
+    /* root is used for creating global variables */
+    --primaryColor:#EE3964;
+}
+@font-face {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    src: url('./Code.ttf');
+}
+body{
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background: linear-gradient(150deg,#404042 80%,#EE3964); */
+    background: url('bg-top.jpg');
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    max-width: 1280px;
+    margin: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px;
+}
+header>div{
+    font-size: 16px;
+}
+header>div>span{
+    color: var(--primaryColor);
+}
+.nav>ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+a:hover{
+    color: var(--primaryColor);
+    text-decoration: 3px dotted var(--primaryColor) underline;
+}
+/* banner starts here*/
+#banner{
+    display: flex;
+    justify-content: space-between;
+   width: 100%;
+}
+.left{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding: 20px;
+}
+.badge{
+  padding: 20px;
+  background-color: var(--primaryColor);
+  color: white;
+  border-radius: 20px;
+  width: max-content;
+}
+section{
+    padding: 50px 0px;
+}
+button>a:hover{
+    color: white;
+}
+.left>h2{
+    font-size: 48px;
+    padding: 20px;
+    
+}
+.left>h2>span{
+    color: var(--primaryColor);
+}
+.left>p{
+    font-size: 24px;
+    padding: 20px;
+}
+#banner>.right>img{
+    width: 450px;
+    height: 450px;
+    padding-right: 20px;
+    mix-blend-mode:multiply;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+}
+button{
+    padding: 20px 30px;
+    width: 200px;
+}
+.buttons>button:nth-child(1){
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: 22px;
+}
+.buttons>button:nth-child(2){
+    background-color: transparent;
+    color: black;
+}
+.buttons>button:nth-child(2):hover{
+    background-color: var(--primaryColor);
+    color: white;
+}
+/* banner ends here */
+/* about start here */
+  .heading{
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 28px;
+  }
+  #about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .About-right>p{
+    font-size: 24px;
+  }
+  p+ul{
+    list-style: none;
+    padding: 20px 0px;
+  }
+  .About-left>img{
+    height: 380px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 50%;
+  }
+/* about ends here */
+/* skills starts here */
+#skills{
+    padding: 20px 10px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 30px;
+}
+#skills>img{
+    padding: 20px;
+    height: 100px;
+}
+/* skills ends here */
+/* projects starts here */
+#projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.project{
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 5px #333;
+}
+.project>img{
+    width: 300px;
+}
+.project button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.project button a{
+    color:white
+}
+/* projects ends here */
+
+footer{
+    text-align: center;
+    padding: 50px 0px;
+}
+/* contact starts here */
+  #contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  input{
+    width: 50vw;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  textarea{
+   width: 50vw;
+    height: 100px;
+    resize: none;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  textarea::placeholder,input::placeholder{
+    padding: 20px;
+  }
+  form>button{
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: 24px;
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
+/* contact ends here */
+
+
+/* media queries */
+@media (max-width:870px){
+    header{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0px 20px;
+    }
+    #banner>.left{
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .left>h2{
+        font-size: 52px;
+    }
+     #about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 30px;
+  }
+  .About-right>p{
+    font-size: 20px;
+  }
+  #skills{
+   grid-template-columns: repeat(3,1fr);
+}
+#projects{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media (max-width:480px){
+    header{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    header>nav>ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #banner{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0px 20px;
+    }
+    #banner>.left{
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .left>h2{
+        font-size: 38px;
+    }
+    #banner>.right>img{
+      width: 350px;
+      height: 400px;
+    }
+     #about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 30px;
+  }
+  .About-right>p{
+    font-size: 20px;
+  }
+  #skills{
+   grid-template-columns: repeat(1,1fr);
+   place-items: center;
+}
+#projects{
+    grid-template-columns: repeat(1,1fr);
+    margin: 20px;
+}
+}
