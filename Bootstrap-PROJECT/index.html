@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-primary-subtle">
+    <header class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+        <div class="d-flex align-items-center gap-1">
+            <img class="logo" src="./Logo.png" alt="image">
+            <h2>DeepSeek</h2>
+        </div>
+        <div>
+            <nav>
+                <ul class="d-flex flex-column flex-md-row gap-5 align-items-center list-unstyled">
+                    <li><a href="" class="text-decoration-none text-black">Home</a></li>
+                    <li><a href="" class="text-decoration-none text-black">About</a></li>
+                    <li><a href="" class="text-decoration-none text-black">services</a></li>
+                    <li><a href="" class="text-decoration-none text-black">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <button class="btn btn-outline-primary">Login</button>
+        </div>
+    </header>
+<!-- <nav class="navbar navbar-expand-lg bg-primary-subtle">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="./images/Logo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Conatct</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-primary" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</nav> -->
+    <main class="container">
+        <section class="row">
+            <div class="col-12 col-md-6 my-2 d-flex flex-column gap-4 justify-content-center align-items-left">
+               <h2 class="fs-1">Great <span class="text-primary">Product</span> is <span class=" fw-bold">built by great</span> 
+                <span class="text-primary">teams</span></h2>
+               <p class="fs-2 text-light-emphasis">We help build and manage a team of world-class developers to bring your vision to life</p>
+               <button class="btn btn-primary banner-btn">Let's get started</button>
+            </div>
+            <div class="col-12 col-md-6 my-2">
+                <img class="img-thumbnail" src="./Hero-Wrapper__image.png" alt="image">
+            </div>
+        </section>
+        <h2 class="text-center text-white py-3">Our clients</h2>
+        <section>
+          <div id="carouselExample" class="carousel slide container text-center pt-5" data-bs-ride="carousel">
+  <div class="carousel-inner row">
+    <div class="carousel-item active row">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjV7j5gGCeCXLpRC61MjaOs8VScDoe9YU_w&s" class="col-3" alt="google">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjV7j5gGCeCXLpRC61MjaOs8VScDoe9YU_w&s" class="col-3" alt="...">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjV7j5gGCeCXLpRC61MjaOs8VScDoe9YU_w&s" class="col-3" alt="...">
+    </div>
+    <div class="carousel-item row">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjV7j5gGCeCXLpRC61MjaOs8VScDoe9YU_w&s" class="col-3" alt="google">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjV7j5gGCeCXLpRC61MjaOs8VScDoe9YU_w&s" class="col-3" alt="...">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjV7j5gGCeCXLpRC61MjaOs8VScDoe9YU_w&s" class="col-3" alt="...">
+    </div>
+    <div class="carousel-item row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjV7j5gGCeCXLpRC61MjaOs8VScDoe9YU_w&s" class="col-3" alt="google">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjV7j5gGCeCXLpRC61MjaOs8VScDoe9YU_w&s" class="col-3" alt="...">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjV7j5gGCeCXLpRC61MjaOs8VScDoe9YU_w&s" class="col-3" alt="...">
+    </div>
+  </div>
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button> -->
+</div>
+        </section>
+        <h2 class="text-center text-white py-3">Our services</h2>
+        <div class="modal" " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <section>
+          <div class="d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center">
+            <div class="card p-3">
+               <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" 
+               alt="service" class="card-img-top pt-2 rounded rounded-3">
+               <div class="card-body">
+                <h2 class="card-title"><i class="bi bi-browser-chrome"></i>Web Development</h2>
+                <p class="card-text">We build website for you</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Get started</button>
+               </div>
+            </div>
+             <div class="card p-3">
+               <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" 
+               alt="service" class="card-img-top pt-2 rounded rounded-3">
+               <div class="card-body">
+                <h2 class="card-title">Web Development</h2>
+                <p class="card-text">We build website for you</p>
+                <button class="btn btn-primary">Get started</button>
+               </div>
+            </div>
+             <div class="card p-3">
+               <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" 
+               alt="service" class="card-img-top pt-2 rounded rounded-3">
+               <div class="card-body">
+                <h2 class="card-title">Web Development</h2>
+                <p class="card-text">We build website for you</p>
+                <button class="btn btn-primary">Get started</button>
+               </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- <section>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://assets.tatacliq.com/medias/sys_master/images/63663948496926.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://assets.tatacliq.com/medias/sys_master/images/63663948562462.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://assets.tatacliq.com/medias/sys_master/images/63663948627998.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </section> -->
+    </main>
+    <footer class="p-5 text-center fs-2 border-top border-2 border-black mt-5">
+         <p>      This website belongs to Everyone &copy; 2024</p>     
+          <div>
+            <a href=""><i class="bi bi-github"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+          </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

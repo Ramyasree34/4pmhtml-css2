@@ -1,0 +1,8 @@
+.logo,.img-thumbnail{
+    mix-blend-mode: multiply;
+    background: transparent;
+    border: none;
+}
+.banner-btn{
+    width: max-content;
+}
