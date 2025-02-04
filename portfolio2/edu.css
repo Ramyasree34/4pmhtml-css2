@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+
+:root {
+    --primary-color: #4070f4;
+    --background-dark: #111;
+    --text-light: #eee;
+    --sidebar-dark: #1a1a1a;
+
+}
+
+/* educ main container */
+.edu-container {
+    width: calc(100% - 350px);
+    margin-left: 350px;
+    min-height: 100vh;
+    padding: 20px;
+   
+   
+}
+
+.edu-sub-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.timeline {
+    flex: 1;
+    border-left: 2px solid var(--text-light);
+}
+
+.timeline-wrapper {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+}
+
+.education, .highlights {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.section-title {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+.course {
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.desc{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.box {
+    padding: 10px;
+    border: 2px solid #a5b9ee;
+    line-height: 1.4;
+    height: fit-content;
+    position: relative;
+    color: black;
+    z-index: 2;
+    width: auto;
+    text-align: left;
+    border-radius: 10px;
+    box-sizing: border-box; /* Added box-sizing */
+}
+
+/* animation */
+
+.box::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(var(--primary-color), #fff);
+    position: absolute;
+    top: 20px;
+    right: calc(100% + 22px);
+    z-index: 3;
+    animation: rotate-dot 1s linear infinite;
+}
+
+@keyframes rotate-dot {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* media query for max-1060 */
+@media (max-width: 1060px) {
+    .edu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .edu-sub-container {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 16px;
+        color: white;
+    }
+
+    .course {
+        font-size: 18px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+}
+
+
+

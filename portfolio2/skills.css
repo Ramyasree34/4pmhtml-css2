@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #4070f4;
+    --background-dark: #111;
+    --sidebar-dark: #1a1a1a;
+    --text-light: #eee;
+    --query-highlight: #9CDCFE;
+}
+
+.section-skills-wrapper {
+   
+    padding: 0px;
+    width: calc(100% - 350px);
+    margin-left: 350px;
+    min-height: 100vh;
+    background-image: url(images/fin-pics.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+ 
+   
+}
+
+.skills-subcont {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+    
+   
+}
+
+.img-cont-skill {
+    flex: 0 1 280px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+   
+  
+}
+
+.skill-girl {
+    max-width: 100%;
+    border-radius: 10px;
+  
+}
+
+/* Tech Stack */
+
+.text-cont-skill {
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+  
+   
+}
+
+.tech-stack-headline {
+    font-size: 24px;
+    text-align: center;
+    color: var(--text-light);
+    margin-top: 10px;
+}
+
+
+/* Tech Stack Grid */
+.grid-techstck-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    padding: 10px;
+    gap: 15px;
+    text-align: center;
+}
+
+.grid-item-techstck {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border : 1px solid  rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item-techstck:hover {
+    transform: scale(1.05);
+}
+
+.grid-item-techstck span {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-light);
+}
+
+.grid-item-techstck img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Certifications Section */
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:20px;
+    width: 100%; 
+    text-align: center; 
+    
+}
+
+.certifications-sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding:10px;
+    text-align: center;
+    border : 1px solid  rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    min-width: 400px; 
+    
+}
+
+.certifications-sub-container img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.certifications-sub-container img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1060px) {
+
+    .section-skills-wrapper{
+
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .skills-subcont{
+
+        width: 100%;
+        padding: 0px;
+       
+    }
+
+}
