@@ -1,0 +1,18 @@
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+.movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px orange;
+}
