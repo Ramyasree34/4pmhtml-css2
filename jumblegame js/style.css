@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+#main-container {
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 4px 10px #4c5fd5;
+}
+#game_heading{
+    font-size: 28px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+    color: #4c5fd5;
+    border-bottom: 4px dotted #f4a261;
+}
+
+#sub-container {
+    width: 80%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+#input_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#scramble_word {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+#input_string {
+    width: 100%;
+    max-width: 250px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #f4a261;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #4c5fd5;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3b4dbd;
+}
+
+@media (max-width: 768px) {
+    #main-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #game_heading{
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    #sub-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #scramble_word {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #game_heading{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #scramble_word {
+        font-size: 20px;
+    }
+
+    #input_string {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
