@@ -1,0 +1,48 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+#changeMode{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+input{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+#change{
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+#counter{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px red;
+}
+#count{
+    font-size: 48px;
+}
+button{
+    padding:10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
